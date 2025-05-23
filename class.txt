@@ -26,16 +26,80 @@ IMPORT
         <<Packages1>>
             __init__.py
             file1.py
-            Sub-modules
+            Sub-module
                 __init__.py
                 ....
                 ....
 
-
-
-
+        <<      >>
+        <<      >>
 
         <<Packages2>>
 
 IMPORT Packages1
-    >> Execute this file (Packages1>>__init__.py) only once
+    >> Execute this file (Packages1>>__init__.py) only once: Load all the variable specified in "__all__ = []" within __init__
+    >> Makes it available to the current NAMESPACE
+    
+    FROM Packages1 IMPORT Sub-module, SFILE1, Function
+        >> it will load the Sub-module, A module, and Function from Packages1.
+
+
+# How to develop a Package
+
+First make development plan
+
+<Package Name>
+    <<Package Name>>
+        - __init__.py
+        -       .py
+        -       .py
+        - Sub-module
+            --  .py
+            --  .py
+
+    <<.venv>>
+        Virtual Environment
+    <<docs>>
+        - index.txt
+        - 
+        Use Sphinx to documentation
+
+            def fun():
+                """
+                    -----------------
+                    ------------------  Numpy Style
+                    ------------------
+
+                """
+    
+    <<Scripts>>
+        - .py
+        - .py
+    <<tests>>
+        - List all the posssible error outcomes of each function within the Package
+    <<Licence>>
+    <<README.md>> 
+        Landing Page
+    <<PYPROJECT.toml>>
+        Packaging Manager
+
+
+Virtual Environment Manager
+    - virtualenv
+    - Conda
+    - POETRY
+        -- Standard python pacakges --
+    - POM
+    - Hatch
+    - UV (Complete New)
+        -- uv venv
+        -- uv add <package>
+        -- uv version
+        -- uv build 
+            --- WHEEL
+            --- SDIST
+        -- uv publish >>> Upload to pypi.org
+
+
+    version: v5.7.3rc
+           :  Major.minor.bug-patching.beta-testing
