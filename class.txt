@@ -1,0 +1,41 @@
+Packages
+----------
+- Set of FILES and DIR Ready
+
+    for "IMPORT">>>>> Python + C
+
+- Distributed Through Repositories
+    PIP    >>>>> pypi.org
+    Conda >>>>>> anaconda.org
+- In Either
+    - Source (GDIGT)
+    - Pre-Compiled (WHEEL) << EGG
+
+IMPORT
+    >> Looks for pacakges/modules In
+
+        pythonpath (env-variable)
+
+            WINDOW "system path"
+            LINUX   getenv
+                    printenv
+    
+        sys.path
+
+    <pythonpath>
+        <<Packages1>>
+            __init__.py
+            file1.py
+            Sub-modules
+                __init__.py
+                ....
+                ....
+
+
+
+
+
+        <<Packages2>>
+
+IMPORT Packages1
+    >> Execute this file (Packages1>>__init__.py) only once
