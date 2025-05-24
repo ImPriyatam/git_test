@@ -103,3 +103,15 @@ Virtual Environment Manager
 
     version: v5.7.3rc
            :  Major.minor.bug-patching.beta-testing
+
+----------------------------------------------------------------------------
+FORKING :: GITHUB
+    UPSTREAM >> Original Project of Someone
+
+    Someone                     Mine                        
+    _________________________________________________________________________________
+    |UPSTREAM| >> fork >> |Origin to your Github Account| >> Clone >> |Local Machine|
+                                                                    (Made changes in the packages 
+                                                                    in the local machine)
+                                                                            V
+    |Upstream| << Pull Request test<<|github account| <<  Push <<   |Staging>> Commit|
